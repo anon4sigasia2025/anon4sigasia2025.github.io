@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link href="https://fonts.cdnfonts.com/css/chalkduster" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .page-container {
+      width: 100%;
+      text-align: center;
+      padding: 1em;
+    }
+
+    button {
+      position: fixed;
+      right: 15px;
+      top: 50%;
+      height: 50px;
+      width: 100px;
+      font-size: 14px;
+      background-color: #008080;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    h1, h2 {
+      color: #008080;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .empty-row {
+      height: 20px;
+    }
+
+    .video-cell {
+      width: 200px;
+    }
+
+    .video-caption {
+      font-size: 16px;
+    }
+
+    .large-font {
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 24px;
+      /* color: #ff0000; */
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .page-container {
+        width: 100%;
+        overflow-x: auto;
+      }
+    }
+
+    @media only screen and (min-width: 1201px) {
+      .page-container {
+        width: 1200px; /* or your desired fixed width */
+        margin: 0 auto; /* center the container if needed */
+      }
+    }
+
+      .scrollable-text {
+        height: 240px; /* match video height */
+        overflow-y: scroll;
+        padding-right: 10px; /* add padding to avoid text touching the edge */
+        word-wrap: break-word; /* ensure long words can wrap */
+        word-break: break-all; /* ensure very long words or links break when necessary */
+        text-align: left; /* add this property for left-aligned text */
+      }
+    
+      .video-cell {
+        text-align: center;
+        vertical-align: top;
+      }
+    
+      /* 可选：为滚动条样式设置 */
+      .scrollable-text::-webkit-scrollbar {
+        width: 8px;
+      }
+    
+      .scrollable-text::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 4px;
+      }
+    
+      .scrollable-text::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+      }
+
+  </style>
+
+  <title>Drag Your Joints: Physically Plausible Motion Generation via
+    Discrete Drag-Guided Joint Control</title>
+</head>
+
+<body>
+  <button class="custom-button" type="button" onclick="scrollToTop()">Back to top</button>
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+  
+  <div class="page-container">
+    <h1>Drag Your Joints: Physically Plausible Motion Generation via
+      Discrete Drag-Guided Joint Control</h1>
+    <h2>Supplementary Materials</h2>
+
+    <ul>
+      <li><a href="#section1">Section 1</a></li>
+      <!-- add more section links as needed -->
+    </ul>
+    
+    <script>
+      function scrollToSection(sectionId) {
+        var targetElement = document.getElementById(sectionId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    </script>
+
+    <!-- 示例章节模板 -->
+    <hr>
+    <h2 id="section1" align="left">Section 1</h2>
+    <table width="1200" align="center">
+      <tbody>
+        <tr class="empty-row"></tr>
+        <tr>
+          <th class="video-cell">
+            <video width="1000" src="path/to/video.mp4" autoplay="" loop="" controls="" muted="" oncontextmenu="return false;"></video>
+          </th>
+        </tr>
+        <tr class="video-caption">
+          <th>Video Description</th>
+        </tr>
+        <tr> <td><br></td> </tr>
+      </tbody>
+    </table>
+    <!-- 章节结束 -->
+
+  </div>
+</body>
+
+</html>
